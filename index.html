@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Orbitron", sans-serif;
+        background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+
+      .section {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 700px;
+        border-radius: 8px;
+      }
+
+      ul {
+        text-align: left;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      form input,
+      form textarea {
+        width: 80%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        background-color: #222;
+        color: white;
+      }
+
+      form button {
+        padding: 10px 20px;
+        background-color: #4800ff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      form button:hover {
+        background-color: #45a049;
+      }
+
+      nav a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+        font-family: "Caveat", cursive;
+        font-size: 1.2em;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .project-box {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        min-height: 80px;
+      }
+
+      #projects p:last-child {
+        margin-top: 25px;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #ffd700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="section">
+      <nav>
+        <a href="#MySkills">My Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Contact</a>
+      </nav>
+    </div>
+
+    <div class="section introduction">
+      <h1>Dani Perina</h1>
+      <p>
+        Yes hello, I am Dani. Currently I am a junior in High School. I have
+        many hobbies such as playing instruments and writing music. I am
+        interested in psychology and philosophy.
+      </p>
+      <blockquote>
+        "The journey of a thousand miles begins with a single step." - Lao Tzu
+      </blockquote>
+
+    </div>
+
+    <div class="section" id="Band that made my favorite album: S.C.I.E.N.C.E">
+      <h2>Band that made my favorite album: S.C.I.E.N.C.E</h2>
+    <div class="section">
+      <img
+        src="https://jadepresents.com/wp-content/uploads/event-incubus-1024x576.jpg"
+        alt="Incubus Band"
+      />
+    </div>
+
+    <div class="section" id="MySkills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>Electric Guitar</li>
+        <li>Viola</li>
+        <li>Reading Music</li>
+        <li>Cooking</li>
+      </ul>
+    </div>
+
+    <div class="section" id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Journaling</li>
+        <li>Movie Watching</li>
+        <li>Discovering Music</li>
+        <li>Painting</li>
+      </ul>
+    </div>
+
+    <div class="section" id="czech-republic">
+      <h2>Where I'm From - Czech Republic</h2>
+      <iframe
+        width="440"
+        height="280"
+        src="https://www.youtube.com/embed/puUuNHXNReI"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="section" id="gallery">
+      <h2>Current Fav Song</h2>
+      <img
+        src="https://i.ytimg.com/vi/ZE1S7LUT6NQ/sddefault.jpg"
+        alt="Current Favorite Song"
+      />
+    </div>
+
+    <div class="section" id="Show I love - Metalocalypse">
+      <h2>Show I love - Metalocalypse</h2>
+      <img
+        src="https://townsquare.media/site/366/files/2015/09/dethklok_00398204.jpg"
+        alt="Metalocalypse"
+      />
+    </div>
+
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-box"></div>
+        <div class="project-box"></div>
+        <div class="project-box"></div>
+      </div>
+      <p>My Projects</p>
+    </div>
+
+    <div class="section" id="contacts">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="fullname">Full Name</label><br />
+        <input id="fullname" type="text" /><br />
+
+        <label for="email">Email</label><br />
+        <input id="email" type="email" /><br />
+
+        <label for="message">Message</label><br />
+        <textarea id="message"></textarea><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </body>
+</html>
